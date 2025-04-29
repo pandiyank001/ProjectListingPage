@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, Linkedin, CreditCard } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState<string>('');
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(`Subscribing email: ${email}`);
     setEmail('');
   };
 

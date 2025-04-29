@@ -38,6 +38,7 @@ export default function ProductListing() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  console.log(activeFilters)
   useEffect(() => {
     const getProducts = async () => {
       try {

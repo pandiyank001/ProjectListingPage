@@ -54,8 +54,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   }, [isAuthenticated, loading, location.pathname, navigate])
 
-  const login = async (email: string, password: string) => {
-    return new Promise<void>((resolve, reject) => {
+  const login = async (email: string) => {
+    return new Promise<void>((resolve) => {
       setTimeout(() => {
         const name = email.split('@')[0]
         
